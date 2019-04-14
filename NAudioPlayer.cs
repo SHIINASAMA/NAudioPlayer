@@ -7,7 +7,7 @@ using NAudio.Wave;
 
 namespace NAudioPlayer
 {
-    class NAudioPlayer
+    public class NAudioPlayer
     {
         private IWavePlayer wavePlayer;
         private AudioFileReader audioFileReader;
