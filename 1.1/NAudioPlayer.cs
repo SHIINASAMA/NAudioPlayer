@@ -120,7 +120,14 @@ namespace NAudioPlayer
             }
             set
             {
-                CurrentTime = value;
+                if(TotalTime > value)
+                {
+                    CurrentTime = value;
+                }
+                else
+                {
+                    return;
+                }
             }
         }
 
