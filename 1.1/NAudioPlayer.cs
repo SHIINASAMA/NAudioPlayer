@@ -120,14 +120,7 @@ namespace NAudioPlayer
             }
             set
             {
-                if(TotalTime > value)
-                {
-                    CurrentTime = value;
-                }
-                else
-                {
-                    return;
-                }
+                audioFileReader.CurrentTime = value;
             }
         }
 
